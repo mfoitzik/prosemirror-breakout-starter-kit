@@ -1,0 +1,17 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+img {
+    width: 250px;
+}
+
+div.editor {
+  width: 400px;
+  height: 400px;
+  border: solid 1px red;
+}
