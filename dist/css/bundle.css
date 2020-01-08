@@ -1,0 +1,14 @@
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+}
+
+img {
+  width: 250px;
+}
+
+div.editor {
+  width: 400px;
+  height: 400px;
+  border: solid 1px red;
+}

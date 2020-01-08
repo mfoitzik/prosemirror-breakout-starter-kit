@@ -12,11 +12,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "prosemirror-commands": "^1.1.3",
     "prosemirror-history": "^1.1.3",
     "prosemirror-keymap": "^1.1.3",
     "prosemirror-model": "^1.8.2",
     "prosemirror-schema-basic": "^1.1.2",
     "prosemirror-state": "^1.3.2",
+    "prosemirror-transform": "^1.2.3",
     "prosemirror-view": "^1.13.7"
   },
   "devDependencies": {
