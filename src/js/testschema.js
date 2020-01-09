@@ -129,7 +129,7 @@ export const nodes = {
   }
 }
 
-const emDOM = ["em", 0], strongDOM = ["strong", 0], codeDOM = ["code", 0]
+const emDOM = ["em", 0], strongDOM = ["strong", 0], codeDOM = ["code", 0], strikeDOM = ["s", 0]
 
 // :: Object [Specs](#model.MarkSpec) for the marks in the schema.
 export const marks = {
@@ -153,6 +153,11 @@ export const marks = {
   em: {
     parseDOM: [{tag: "i"}, {tag: "em"}, {style: "font-style=italic"}],
     toDOM() { return emDOM }
+  },
+
+  s: {
+    parseDOM: [{tag: "s"}, {style: "text-decoration=line-through"}],
+    toDOM() { return strikeDOM }
   },
 
   // :: MarkSpec A strong mark. Rendered as `<strong>`, parse rules
