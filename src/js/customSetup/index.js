@@ -4,7 +4,7 @@ import {baseKeymap} from "prosemirror-commands"
 import {Plugin} from "prosemirror-state"
 import {dropCursor} from "prosemirror-dropcursor"
 import {gapCursor} from "prosemirror-gapcursor"
-import {menuBar} from "prosemirror-menu"
+import {menuBar} from "../menu/index.js"
 
 import {buildMenuItems} from "./menu"
 import {buildKeymap} from "./keymap"
