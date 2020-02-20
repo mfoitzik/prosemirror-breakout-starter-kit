@@ -776,7 +776,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! C:\\Users\\mfoitzik\\Desktop\\WORK\\TestProjects\\prosetest\\node_modules\\webpack-dev-server\\client\\index.js?http://localhost:9000 */\"./node_modules/webpack-dev-server/client/index.js?http://localhost:9000\");\nmodule.exports = __webpack_require__(/*! ./src/js/index.js */\"./src/js/index.js\");\n\n\n//# sourceURL=webpack:///multi_(webpack)-dev-server/client?");
+eval("__webpack_require__(/*! C:\\Work\\TestProjects\\prosetest\\node_modules\\webpack-dev-server\\client\\index.js?http://localhost:9000 */\"./node_modules/webpack-dev-server/client/index.js?http://localhost:9000\");\nmodule.exports = __webpack_require__(/*! ./src/js/index.js */\"./src/js/index.js\");\n\n\n//# sourceURL=webpack:///multi_(webpack)-dev-server/client?");
 
 /***/ })
 

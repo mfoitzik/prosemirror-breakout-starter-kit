@@ -1,16 +1,24 @@
 {
-  "name": "webpack5",
+  "name": "prosemirror-breakout-starter-kit",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a ProseMirror starter kit that uses Webpack. This project is based off the basic example given by the ProseMirror developer, however, it breaks out the individual pieces of the prosemirror-example-setup inside the project.",
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
     "start:dev": "webpack-dev-server"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["ProseMirror", "Webpack", "Tutorial", "Starter Kit"],
+  "author": {
+    "name": "Mike Foitzik",
+    "email": "mike@mifo.com",
+    "url": "https://www.mifo.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mfoitzik/prosemirror-breakout-starter-kit"
+  },
+  "license": "MIT",
   "dependencies": {
     "crel": "^4.2.0",
     "prosemirror-commands": "^1.1.3",
