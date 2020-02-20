@@ -403,13 +403,6 @@ export let undoItem = new MenuItem({
   icon: icons.undo
 })
 
-export let undoItem2 = new MenuItem({
-  title: "Undo last change",
-  run: undo,
-  enable: state => undo(state),
-  icon: icons.undo
-})
-
 // :: MenuItem
 // Menu item for the `redo` command.
 export let redoItem = new MenuItem({
