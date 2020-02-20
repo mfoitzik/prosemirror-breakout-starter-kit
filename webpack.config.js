@@ -14,7 +14,7 @@ module.exports = {
           filename: "css/bundle.css"
         }),
         new HtmlWebpackPlugin({
-            filename: "new2index.html",
+            filename: "index.html",
             template: "src/index.html"
         }),
         new CopyPlugin([
@@ -28,7 +28,7 @@ module.exports = {
         compress: true,
         writeToDisk:true,
         historyApiFallback: {
-          index: 'new2index.html',
+          index: 'index.html',
         },
         port: 9000
       },

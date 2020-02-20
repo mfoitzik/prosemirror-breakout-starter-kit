@@ -13,37 +13,11 @@ export const nodes = {
 
   // :: NodeSpec A plain paragraph textblock. Represented in the DOM
   // as a `<p>` element.
-//   image: {
-//     inline: true,
-//     attrs: {
-//       src: {},
-//       alt: {default: null},
-//       title: {default: null}
-//     },
-//     group: "inline",
-//     draggable: true,
-//     parseDOM: [{tag: "img[src]", getAttrs(dom) {
-//       return {
-//         src: dom.getAttribute("src"),
-//         title: dom.getAttribute("title"),
-//         alt: dom.getAttribute("alt")
-//       }
-//     }}],
-//     toDOM(node) { let {src, alt, title} = node.attrs; return ["img", {src, alt, title}] }
-//   }
   paragraph: {
     content: "inline*",
     group: "block",
-    attrs: {
-      class: {default: null}
-    },
-    parseDOM: [{tag: "p", getAttrs(dom) {
-        return {
-          class: dom.getAttribute("class")
-        }
-      }}],
-    toDOM(node) {return  ["p", {class: node.attrs.class}, 0] }
-    
+    parseDOM: [{tag: "p"}],
+    toDOM() { return pDOM }
   },
 
   // :: NodeSpec A blockquote (`<blockquote>`) wrapping one or more blocks.
@@ -129,7 +103,7 @@ export const nodes = {
   }
 }
 
-const emDOM = ["em", 0], strongDOM = ["strong", 0], codeDOM = ["code", 0], strikeDOM = ["s", 0]
+const emDOM = ["em", 0], strongDOM = ["strong", 0], codeDOM = ["code", 0]
 
 // :: Object [Specs](#model.MarkSpec) for the marks in the schema.
 export const marks = {
@@ -153,11 +127,6 @@ export const marks = {
   em: {
     parseDOM: [{tag: "i"}, {tag: "em"}, {style: "font-style=italic"}],
     toDOM() { return emDOM }
-  },
-
-  s: {
-    parseDOM: [{tag: "s"}, {style: "text-decoration=line-through"}],
-    toDOM() { return strikeDOM }
   },
 
   // :: MarkSpec A strong mark. Rendered as `<strong>`, parse rules
@@ -187,4 +156,4 @@ export const marks = {
 //
 // To reuse elements from this schema, extend or read from its
 // `spec.nodes` and `spec.marks` [properties](#model.Schema.spec).
-export const myschema = new Schema({nodes, marks})
+export const schema = new Schema({nodes, marks})
