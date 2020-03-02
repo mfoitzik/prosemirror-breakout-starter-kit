@@ -8,7 +8,12 @@
     "build": "webpack --mode production",
     "start:dev": "webpack-dev-server"
   },
-  "keywords": ["ProseMirror", "Webpack", "Tutorial", "Starter Kit"],
+  "keywords": [
+    "ProseMirror",
+    "Webpack",
+    "Tutorial",
+    "Starter Kit"
+  ],
   "author": {
     "name": "Mike Foitzik",
     "email": "mike@mifo.com",
@@ -21,6 +26,7 @@
   "license": "MIT",
   "dependencies": {
     "crel": "^4.2.0",
+    "pretty": "^2.0.0",
     "prosemirror-commands": "^1.1.3",
     "prosemirror-dropcursor": "^1.3.2",
     "prosemirror-gapcursor": "^1.1.3",

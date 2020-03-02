@@ -348,3 +348,15 @@ li.ProseMirror-selectednode:after {
 .ProseMirror p {
   margin-bottom: 1em;
 }
+#mybutton {
+  display: block;
+}
+
+#setbutton {
+  display: block;
+}
+
+#mytext {
+  width: 100%;
+  height: 200px;
+}
