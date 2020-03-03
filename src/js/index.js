@@ -23,7 +23,7 @@
 
   
     let myt = document.querySelector("#mytext");
-    document.getElementById("mybutton").addEventListener("click", function(){
+    document.getElementById("getbutton").addEventListener("click", function(){
       console.log(view.state.doc.content.size);
       const div = document.createElement('div')
       const fragment = DOMSerializer

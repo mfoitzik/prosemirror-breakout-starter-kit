@@ -1,7 +1,10 @@
 import {Schema} from "prosemirror-model"
 
-const pDOM = ["p", 0], blockquoteDOM = ["blockquote", 0], hrDOM = ["hr"],
-      preDOM = ["pre", ["code", 0]], brDOM = ["br"]
+const pDOM = ["p", 0], 
+      blockquoteDOM = ["blockquote", 0], 
+      hrDOM = ["hr"],
+      preDOM = ["pre", ["code", 0]], 
+      brDOM = ["br"]
 
 // :: Object
 // [Specs](#model.NodeSpec) for the nodes defined in this schema.
@@ -103,7 +106,9 @@ export const nodes = {
   }
 }
 
-const emDOM = ["em", 0], strongDOM = ["strong", 0], codeDOM = ["code", 0]
+const emDOM = ["em", 0], 
+      strongDOM = ["strong", 0], 
+      codeDOM = ["code", 0]
 
 // :: Object [Specs](#model.MarkSpec) for the marks in the schema.
 export const marks = {
