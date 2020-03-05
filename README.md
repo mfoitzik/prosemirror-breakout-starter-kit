@@ -107,7 +107,7 @@ After adding the above this section of the code should look like:
   },
 ```
 
-In real simple terms the above entry tells ProseMirror that if it finds an ‘<s>’ element or an element with a style that has the text-decoration property set to line-through to return an ‘<s>’ tag (strikeDOM constant).
+In real simple terms the above entry tells ProseMirror that if it finds an `‘<s>’` element or an element with a style that has the text-decoration property set to line-through to return an ‘<s>’ tag (strikeDOM constant).
 
 Save your changes and reload your browser. Now click “View Source” again and add the following text to the source:
 
@@ -117,7 +117,7 @@ Now click the “Set Source” button. The editor now supports strikethrough tex
 
 ![](readmeImages/cap2.png)
 
-Now in the source text box replace <s>This is strikethrough text</s> with the following:
+Now in the source text box replace `<s>`This is strikethrough text`</s>` with the following:
 
 `<span style="text-decoration:line-through;">This is strikethrough text</span>`
 
