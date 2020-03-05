@@ -107,7 +107,7 @@ After adding the above this section of the code should look like:
   },
 ```
 
-In real simple terms the above entry tells ProseMirror that if it finds an `‘<s>’` element or an element with a style that has the text-decoration property set to line-through to return an ‘<s>’ tag (strikeDOM constant).
+In real simple terms the above entry tells ProseMirror that if it finds an `‘<s>’` element or an element with a style that has the text-decoration property set to line-through to return an `‘<s>’` tag (strikeDOM constant).
 
 Save your changes and reload your browser. Now click “View Source” again and add the following text to the source:
 
@@ -121,7 +121,7 @@ Now in the source text box replace `<s>`This is strikethrough text`</s>` with th
 
 `<span style="text-decoration:line-through;">This is strikethrough text</span>`
 
-Click on the “Set Source” button and then click on the “View Source” button again. You will notice that the editor parsed the span tag that had the style set to “text-decoration:line-through” and replaced it with the ‘<s>’ tag.
+Click on the “Set Source” button and then click on the “View Source” button again. You will notice that the editor parsed the span tag that had the style set to “text-decoration:line-through” and replaced it with the `‘<s>’` tag.
 
 Add a Keyboard Shortcut
 -----------------------
@@ -129,14 +129,14 @@ Add a Keyboard Shortcut
 Open the src/js/customSetup/keymap.js file
 
 At around line 67 add the following code:
-
+```
 if (type = schema.marks.s) {
     bind("Alt-Shift-s", toggleMark(type))
     bind("Alt-Shift-S", toggleMark(type))
   }
-
+```
 After entering this, that section of code should look like:
-
+```
   if (type = schema.marks.em) {
     bind("Mod-i", toggleMark(type))
     bind("Mod-I", toggleMark(type))
@@ -147,7 +147,7 @@ After entering this, that section of code should look like:
   }
   if (type = schema.marks.code)
     bind("Mod-\`", toggleMark(type))
-
+```
 Save your changes and reload the page. select a word in the editor and then hit Alt-Shift-s on your keyboard and you should notice that the selected text will get the strikethrough. hit Alt-Shit-s again and it will remove it.
 
 Add a Button to the Menu
@@ -166,21 +166,21 @@ Go down to the editor section and you will see a strikethrough image there. Clic
 Open the strikethrough SVG in a text editor.
 
 In the src/js/menu/menu.js file go down to the em entry (about line 344) and enter the following after it:
-
+```
 s: {
 	width: 24, height: 24,
 	path: "M6.85,7.08C6.85,4.37,9.45,3,12.24,3c1.64,0,3,0.49,3.9,1.28c0.77,0.65,1.46,1.73,1.46,3.24h-3.01 c0-0.31-0.05-0.59-0.15-0.85c-0.29-0.86-1.2-1.28-2.25-1.28c-1.86,0-2.34,1.02-2.34,1.7c0,0.48,0.25,0.88,0.74,1.21 C10.97,8.55,11.36,8.78,12,9H7.39C7.18,8.66,6.85,8.11,6.85,7.08z M21,12v-2H3v2h9.62c1.15,0.45,1.96,0.75,1.96,1.97 c0,1-0.81,1.67-2.28,1.67c-1.54,0-2.93-0.54-2.93-2.51H6.4c0,0.55,0.08,1.13,0.24,1.58c0.81,2.29,3.29,3.3,5.67,3.3 c2.27,0,5.3-0.89,5.3-4.05c0-0.3-0.01-1.16-0.48-1.94H21V12z"
 },
-
+```
 The above basically copies the path info from the strikethrough svg file downloaded from Google icons.
 
 Open the src/hs/customeSetup/menu.js file
 
 Add the following at about line 169:
-
+```
 if (type = schema.marks.s)
     r.toggleS = markItem(type, {title: "Toggle strikethrough", icon: icons.s})
-	
+```	
 
 Save all your changes and now you’ll see the new strikethrough button showing in the editor.
 
