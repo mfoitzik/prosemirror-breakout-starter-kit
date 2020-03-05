@@ -55,11 +55,9 @@ Before we go through the steps of adding functionality let’s discuss a basic c
 
 So the full line should now look like this:
 
-`
-
+```
 <p><s>This is strikethrough text</s>This is editable text. You can focus it and start typing.</p>
-
-`
+```
 
 Now click on the “Set Source” button.
 
