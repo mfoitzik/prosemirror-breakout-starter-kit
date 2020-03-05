@@ -82,14 +82,14 @@ Starting on about line 109 there are constants defined for emDOM, strongDOM, and
 
 So the whole block of code will look like:
 
-const emDOM = \["em", 0\], 
+`const emDOM = \["em", 0\], 
       strongDOM = \["strong", 0\], 
       codeDOM = \["code", 0\], 
-      strikeDOM = \["s", 0\]
+      strikeDOM = \["s", 0\]`
 
 Find the em: entry (at about line 134) and after it add the following:
 
-s: {
+`s: {
 parseDOM: \[{tag: "s"}, {style: "text-decoration=line-through"}\],
 toDOM() { return strikeDOM }
   },
@@ -101,7 +101,7 @@ After adding the above this section of the code should look like:
   s: {
     parseDOM: \[{tag: "s"}, {style: "text-decoration=line-through"}\],
     toDOM() { return strikeDOM }
-  },
+  },`
 
 In real simple terms the above entry tells ProseMirror that if it finds an ‘<s>’ element or an element with a style that has the text-decoration property set to line-through to return an ‘<s>’ tag (strikeDOM constant).
 
