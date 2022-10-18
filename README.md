@@ -183,6 +183,10 @@ Add the following at about line 169:
 if (type = schema.marks.s)
     r.toggleS = markItem(type, {title: "Toggle strikethrough", icon: icons.s})
 ```	
+Then insert `r.toggleS` into the `r.inlineMenu` list around line 226:
+```
+    r.inlineMenu = [cut([r.toggleStrong, r.toggleEm, r.toggleS, r.toggleCode, r.toggleLink])]
+```
 
 Save all your changes and now you’ll see the new strikethrough button showing in the editor.
 
