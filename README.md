@@ -94,7 +94,11 @@ s: {
 parseDOM: \[{tag: "s"}, {style: "text-decoration=line-through"}\],
 toDOM() { return strikeDOM }
   },
+```
+
 After adding the above this section of the code should look like:
+
+```
   em: {
     parseDOM: \[{tag: "i"}, {tag: "em"}, {style: "font-style=italic"}\],
     toDOM() { return emDOM }
